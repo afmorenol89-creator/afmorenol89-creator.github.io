@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — firmas-finca</title>
+<style>
+  body { font: 18px/1.6 system-ui, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem; color: #222; background: #fff; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; }
+  a { color: #2f6b2f; }
+  blockquote { margin: 1rem 0; padding: .5rem 1rem; border-left: 4px solid #ccc; color: #444; }
+</style>
+</head>
+<body>
+<h1>Política de privacidad de firmas-finca</h1>
+<p><em>Última actualización: 12 de octubre de 2026</em></p>
+
+<h2>1. Qué es firmas-finca</h2>
+<p>firmas-finca es una herramienta privada del empleador de unas fincas agrícolas en Colombia. Sirve para enviar documentos laborales a los trabajadores por WhatsApp y guardar la constancia de su firma electrónica.</p>
+<p>Solo el administrador del empleador usa la herramienta con su cuenta de Google. Los trabajadores firman desde WhatsApp. No inician sesión con Google ni se conectan a Drive.</p>
+
+<h2>2. Qué permiso de Google pide</h2>
+<p>Un solo permiso: <strong>ver y administrar solo los archivos que la herramienta misma crea en Google Drive</strong> (permiso <code>drive.file</code>).</p>
+<ul>
+  <li>No puede ver, cambiar ni borrar ningún otro archivo del Drive.</li>
+  <li>No recibe el correo, los contactos, el calendario ni otros datos de la cuenta de Google.</li>
+  <li>Con ese permiso, el servidor guarda una llave de acceso que le deja crear archivos en el Drive del administrador hasta que el administrador la retire (ver punto 6).</li>
+</ul>
+
+<h2>3. Para qué lo usa</h2>
+<p>Solo para guardar, en el Google Drive del administrador, una copia de respaldo de cada documento laboral firmado. Así hay una segunda copia si falla la base de datos principal. Cada respaldo tiene:</p>
+<ul>
+  <li>el PDF firmado, con los datos del documento (por ejemplo, nombre y cédula del trabajador, y lo que diga el documento);</li>
+  <li>uno o más archivos de evidencias, con: nombre y cédula del trabajador, número de WhatsApp, finca, fechas y horas del envío y de la firma, los datos de los avisos de WhatsApp y la huella digital del PDF (un código único que cambia si alguien modifica el archivo).</li>
+</ul>
+<p>No usamos estos archivos para ningún otro fin.</p>
+
+<h2>4. Uso limitado de los datos de Google</h2>
+<blockquote>The use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</blockquote>
+<p>En español: el uso y la transferencia de la información recibida de las APIs de Google cumplen esa política, incluidos sus requisitos de uso limitado. En concreto:</p>
+<ul>
+  <li>Solo usamos los datos de Google para el respaldo descrito arriba.</li>
+  <li>No los entregamos a terceros, salvo para prestar ese respaldo, cumplir la ley o por seguridad.</li>
+  <li>No los usamos para publicidad ni para entrenar modelos de inteligencia artificial.</li>
+  <li>Ninguna persona los lee, salvo el propio administrador, o cuando haga falta por seguridad o para cumplir la ley.</li>
+</ul>
+
+<h2>5. Quién más interviene</h2>
+<p>No vendemos ni entregamos estos datos a nadie para su propio uso. Para que la herramienta funcione, estos proveedores guardan o procesan datos por encargo del empleador, cada uno con sus propias condiciones de privacidad:</p>
+<ul>
+  <li>Google (guarda el respaldo en Drive);</li>
+  <li>Supabase (base de datos y archivos);</li>
+  <li>Render (servidor de la herramienta);</li>
+  <li>Kapso y Meta/WhatsApp (envío de los mensajes).</li>
+</ul>
+<p>Solo entregamos datos a una autoridad si la ley lo exige.</p>
+
+<h2>6. Cómo se protegen y cómo retirar el permiso</h2>
+<p>La llave de acceso a Google se guarda solo en el servidor de la herramienta, nunca en el navegador. El panel solo lo pueden usar administradores con su cuenta. Los archivos de respaldo quedan protegidos por la seguridad de la cuenta de Google del administrador. La huella digital permite comprobar que un documento no se alteró.</p>
+<p>El administrador puede quitarle el permiso a la herramienta en cualquier momento en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Desde ese momento la herramienta ya no puede guardar respaldos nuevos. Los archivos ya guardados no se borran solos: siguen en su Drive y puede borrarlos él mismo si quiere.</p>
+
+<h2>7. Datos de los trabajadores</h2>
+<p>Los datos personales de los trabajadores (nombre, cédula, número de WhatsApp y los datos del documento que firman) los usa y guarda el empleador, una persona natural. Según la Ley 1581 de 2012, el empleador es el responsable: quien decide qué se hace con esos datos.</p>
+<p>Se usan solo para gestionar y probar los documentos laborales y su firma electrónica. Esta página no publica datos de ningún trabajador.</p>
+<p>Cada trabajador puede conocer, actualizar o corregir sus datos, y pedir información sobre su uso, escribiendo a <a href="mailto:afmorenol89@gmail.com">afmorenol89@gmail.com</a>. Algunos documentos laborales la ley obliga a guardarlos, y por eso no siempre se pueden borrar. Si cree que sus derechos no se respetan, puede quejarse ante la Superintendencia de Industria y Comercio.</p>
+
+<h2>8. Contacto</h2>
+<p>Para preguntas sobre esta política: <a href="mailto:afmorenol89@gmail.com">afmorenol89@gmail.com</a>.</p>
+</body>
+</html>
